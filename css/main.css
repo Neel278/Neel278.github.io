@@ -5080,6 +5080,11 @@ Created using IcoMoon - icomoon.io
   height: 100%;
   z-index: -1;
 }
+
+.skeleton{
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
 .page-header footer {
   position: absolute;
   bottom: 0;
@@ -5689,6 +5694,14 @@ Created using IcoMoon - icomoon.io
     animation: bottombar-x 500ms 0s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+  }
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200,20%,70%);
+    }
+    100% {
+      background-color: hsl(200,20%,95%);
+    }
   }
   @keyframes topbar-x {
     0% {
@@ -6872,7 +6885,7 @@ Created using IcoMoon - icomoon.io
   background: linear-gradient(
     0deg,
     rgba(44, 44, 44, 0.2),
-    rgba(55, 140, 63, 0.6)
+    rgba(3, 252, 244,0.6)
   );
   /* Standard syntax */
 }
